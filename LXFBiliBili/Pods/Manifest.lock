@@ -1,0 +1,77 @@
+PODS:
+  - Alamofire (4.5.1)
+  - Differentiator (3.0.0)
+  - Kingfisher (4.1.1)
+  - MJRefresh (3.1.14.1)
+  - NSObject+Rx (4.1.0):
+    - RxSwift (~> 4.0)
+  - ObjectMapper (3.0.0)
+  - ReusableKit (2.0.0):
+    - ReusableKit/Core (= 2.0.0)
+    - ReusableKit/RxSwift (= 2.0.0)
+  - ReusableKit/Core (2.0.0)
+  - ReusableKit/RxSwift (2.0.0):
+    - ReusableKit/Core
+    - RxCocoa (>= 4.0.0-beta.0)
+    - RxSwift (>= 4.0.0-beta.0)
+  - RxAlamofire (4.0.0):
+    - RxAlamofire/Core (= 4.0.0)
+  - RxAlamofire/Core (4.0.0):
+    - Alamofire (~> 4.5)
+    - RxSwift (~> 4.0)
+  - RxCocoa (4.0.0):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.0.0):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxGesture (1.2.0):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.0.0)
+  - SnapKit (4.0.0)
+  - SwiftyJSON (3.1.4)
+  - Then (2.2.0)
+  - TYCyclePagerView (1.0.2)
+  - TYPagerController (2.0.6)
+
+DEPENDENCIES:
+  - Kingfisher
+  - MJRefresh
+  - NSObject+Rx
+  - ObjectMapper
+  - ReusableKit
+  - ReusableKit/RxSwift
+  - RxAlamofire
+  - RxCocoa
+  - RxDataSources (~> 3.0)
+  - RxGesture
+  - RxSwift (~> 4.0)
+  - SnapKit
+  - SwiftyJSON
+  - Then
+  - TYCyclePagerView
+  - TYPagerController
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  Differentiator: 772c2e4e2093584a0501a72019a7cd19e1a72cc8
+  Kingfisher: 6793a473357b5dbee42b0068ef203fe8325f259e
+  MJRefresh: 238e6a37e2dba12160ee3b79f6d2a2b26abcab42
+  NSObject+Rx: 6447292bbd5e39c94e252de67e76c7ce08e05939
+  ObjectMapper: 92230db59bf8f341a5c3a3cf0b9fbdde3cf0d87f
+  ReusableKit: 668daa3e98e614ec2e135db2028a958baa2abd6f
+  RxAlamofire: 6ea579ac53bf14cb4bc7049a3866e5a769989b1d
+  RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
+  RxDataSources: 5a5ad827b6ad91730bb4b3ed87739f28a7be3d84
+  RxGesture: f818b321ec72cafb6319e05a829834489fbdcfbd
+  RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  Then: 823f9813e1d4d0a814a5ba15e9c9d33ec7aca631
+  TYCyclePagerView: c51924fa62092cca3f0cac326eb87c3c919f7597
+  TYPagerController: 043c9063b53cc6d3f6eb937c9dcbf431ae7cad85
+
+PODFILE CHECKSUM: c7e901426acc44527db095299b79b572797d2da9
+
+COCOAPODS: 1.4.0.beta.1

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LXFLiveTopCategoryCell" id="gTV-IL-0wX" customClass="LXFLiveTopCategoryCell" customModule="LXFBiliBili" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="60"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_live_home_entertainment" translatesAutoresizingMaskIntoConstraints="NO" id="2rO-e3-la4">
+                        <rect key="frame" x="5" y="0.0" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="T00-4U-J1k"/>
+                            <constraint firstAttribute="width" constant="40" id="p9k-t7-HOD"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="娱乐" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UuO-O7-br2">
+                        <rect key="frame" x="0.0" y="40" width="50" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="UuO-O7-br2" secondAttribute="trailing" id="6Xq-U2-7jR"/>
+                <constraint firstItem="UuO-O7-br2" firstAttribute="top" secondItem="2rO-e3-la4" secondAttribute="bottom" id="KCb-jQ-XCZ"/>
+                <constraint firstItem="2rO-e3-la4" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="eCb-qL-s54"/>
+                <constraint firstItem="2rO-e3-la4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="oEP-Og-4YR"/>
+                <constraint firstItem="UuO-O7-br2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ziV-hp-kPt"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="66" height="70"/>
+            <connections>
+                <outlet property="iconView" destination="2rO-e3-la4" id="YEb-Ov-bJs"/>
+                <outlet property="titleLabel" destination="UuO-O7-br2" id="14X-An-mk2"/>
+            </connections>
+            <point key="canvasLocation" x="33" y="62"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_live_home_entertainment" width="30" height="30"/>
+    </resources>
+</document>

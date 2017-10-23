@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LXFAttentionTipLoginView" customModule="LXFBiliBili" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tip_attention" translatesAutoresizingMaskIntoConstraints="NO" id="tpY-9h-tio">
+                    <rect key="frame" x="79" y="0.0" width="216" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="2BV-iY-h4Q"/>
+                        <constraint firstAttribute="width" constant="216" id="cqw-AP-t7A"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcP-MW-Wyd">
+                    <rect key="frame" x="0.0" y="170" width="375" height="33.5"/>
+                    <string key="text">你还没有登录哦～
+赶快登录打开新世界的大门</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKU-iZ-zBQ">
+                    <rect key="frame" x="131" y="228" width="113" height="34"/>
+                    <color key="backgroundColor" red="0.96078431372549022" green="0.46274509803921571" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="113" id="6fn-S3-FuJ"/>
+                        <constraint firstAttribute="height" constant="34" id="if9-6N-FBn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="登录"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="AKU-iZ-zBQ" firstAttribute="top" secondItem="fcP-MW-Wyd" secondAttribute="bottom" constant="25" id="1TV-hg-jLf"/>
+                <constraint firstItem="tpY-9h-tio" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="1oU-PU-TSr"/>
+                <constraint firstItem="tpY-9h-tio" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Zz0-w9-ciz"/>
+                <constraint firstItem="fcP-MW-Wyd" firstAttribute="top" secondItem="tpY-9h-tio" secondAttribute="bottom" constant="20" id="cIA-oH-KFG"/>
+                <constraint firstItem="fcP-MW-Wyd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="caI-V8-4qY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fcP-MW-Wyd" secondAttribute="trailing" id="eY8-kf-ApJ"/>
+                <constraint firstItem="AKU-iZ-zBQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="q81-qL-SNm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="loginBtn" destination="AKU-iZ-zBQ" id="E37-eU-Xe3"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="76.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tip_attention" width="216" height="150"/>
+    </resources>
+</document>

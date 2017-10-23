@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LXFHomeLiveBottomFooter" id="U6b-Vx-4bR" customClass="LXFHomeLiveBottomFooter" customModule="LXFBiliBili" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="99"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ER6-9j-LeG">
+                    <rect key="frame" x="8" y="51" width="352" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="HMb-ws-rCQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="全部直播">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="ER6-9j-LeG" secondAttribute="trailing" constant="8" id="98C-ML-g9l"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="ER6-9j-LeG" secondAttribute="bottom" constant="8" id="FMc-BO-ojw"/>
+                <constraint firstItem="ER6-9j-LeG" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="8" id="hnE-1F-ivy"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="allLiveBtn" destination="ER6-9j-LeG" id="2eB-Cz-Mg1"/>
+            </connections>
+            <point key="canvasLocation" x="49" y="52.5"/>
+        </collectionReusableView>
+    </objects>
+</document>

@@ -1,0 +1,36 @@
+platform :ios, '10.0'
+
+post_install do |installer|
+    # 需要指定编译版本的第三方的名称
+    myTargets = []
+    
+    installer.pods_project.targets.each do |target|
+        if myTargets.include? target.name
+            target.build_configurations.each do |config|
+                config.build_settings['SWIFT_VERSION'] = '3.2'
+            end
+        end
+    end
+end
+
+use_frameworks!
+target 'LXFBiliBili' do
+
+pod 'RxSwift',    '~> 4.0'
+pod 'RxCocoa'
+pod 'NSObject+Rx'
+pod 'ObjectMapper'
+pod 'RxDataSources', '~> 3.0'
+pod 'Then'
+pod 'RxAlamofire'
+pod 'Kingfisher'
+pod 'ReusableKit'
+pod 'ReusableKit/RxSwift'
+pod 'SnapKit'
+pod 'RxGesture'
+pod 'TYCyclePagerView'
+pod 'TYPagerController'
+pod 'SwiftyJSON'
+pod 'MJRefresh'
+
+end
