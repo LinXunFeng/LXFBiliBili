@@ -45,6 +45,7 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
             <connections>
+                <outlet property="refreshIconView" destination="6fp-Ce-lDs" id="blw-0r-dRy"/>
                 <outlet property="swapBtn" destination="8Wz-vG-ayO" id="7Dq-jg-hlS"/>
             </connections>
             <point key="canvasLocation" x="25" y="54.5"/>

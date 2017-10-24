@@ -26,10 +26,6 @@ class LXFLiveViewController: UIViewController, Refreshable {
     // View
     private var liveCollectionView: UICollectionView!
     
-    // 数据
-    private var sectionHeader2 = Variable<[LXFLiveModel]>([])
-    private var setionHeaders = Variable<[LXFPartitionModel]>([])
-    
     var dataSource : RxCollectionViewSectionedReloadDataSource<LXFLiveSection>!
     
     override func viewDidLoad() {
@@ -134,14 +130,7 @@ extension LXFLiveViewController {
         self.view.clipRectCorner(direction: UIRectCorner(rawValue: direction), cornerRadius: 5)
         
         // collectionView
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .vertical
-        layout.headerReferenceSize = CGSize(width: kScreenW, height: 50)
-        let margin = LXFHomeLiveCell.itemMargin()
-        let wh = (kScreenW - 3 * margin) * 0.5
-        layout.sectionInset = UIEdgeInsetsMake(margin, margin, margin, margin)
-        layout.itemSize = CGSize(width: wh, height: wh)
-        layout.minimumLineSpacing = LXFHomeLiveCell.itemMargin()
+        let layout = LXFFlowLayout()
         let frame = CGRect(x: 0, y: 0, width: kScreenW, height: view.height - kTabbarH)
         let liveCollectionView = UICollectionView(frame: frame, collectionViewLayout: layout)
         self.liveCollectionView = liveCollectionView

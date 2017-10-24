@@ -16,6 +16,8 @@
 		3ADB729D1F949A5A0047D15A /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADB729C1F949A5A0047D15A /* Common.swift */; };
 		B6EDEBAD1248A2493514E3D4 /* Pods_LXFBiliBili.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989362A35B5A567644832EE8 /* Pods_LXFBiliBili.framework */; };
 		FD174AA61F9ADCFB00C01711 /* LXFRecommendDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD174AA51F9ADCFB00C01711 /* LXFRecommendDataModel.swift */; };
+		FD2A3CC41F9F366E00F946A3 /* LXFHomeRecArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2A3CC31F9F366E00F946A3 /* LXFHomeRecArticleCell.swift */; };
+		FD2A3CC61F9F37E300F946A3 /* LXFHomeRecBangumiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2A3CC51F9F37E300F946A3 /* LXFHomeRecBangumiCell.swift */; };
 		FD3102751F9791BA00817268 /* LXFNavSearchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3102741F9791BA00817268 /* LXFNavSearchable.swift */; };
 		FD3102821F97AD1A00817268 /* LXFMenuBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3102811F97AD1A00817268 /* LXFMenuBottomView.swift */; };
 		FD3102841F97AD2400817268 /* LXFMenuBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD3102831F97AD2400817268 /* LXFMenuBottomView.xib */; };
@@ -42,6 +44,25 @@
 		FD53FED01F989791001BEB63 /* LXFMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD53FECF1F989791001BEB63 /* LXFMenuView.swift */; };
 		FD53FED21F989970001BEB63 /* LXFMenuTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD53FED11F989970001BEB63 /* LXFMenuTopView.swift */; };
 		FD53FED41F989978001BEB63 /* LXFMenuTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD53FED31F989978001BEB63 /* LXFMenuTopView.xib */; };
+		FD5762211F9EDBD500CA6E6E /* CALayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5762201F9EDBD500CA6E6E /* CALayer+Extension.swift */; };
+		FD5762241F9EE33400CA6E6E /* LXFRecommendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5762231F9EE33400CA6E6E /* LXFRecommendController.swift */; };
+		FD5762271F9EEA7100CA6E6E /* LXFRecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5762261F9EEA7100CA6E6E /* LXFRecommendViewModel.swift */; };
+		FD57622A1F9EEB2700CA6E6E /* LXFHomeRecommendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5762291F9EEB2700CA6E6E /* LXFHomeRecommendModel.swift */; };
+		FD57622C1F9EED6900CA6E6E /* LXFTagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57622B1F9EED6900CA6E6E /* LXFTagModel.swift */; };
+		FD57622E1F9EED7A00CA6E6E /* LXFCountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57622D1F9EED7A00CA6E6E /* LXFCountModel.swift */; };
+		FD5762301F9EEEE700CA6E6E /* LXFDislikeReasonsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57622F1F9EEEE700CA6E6E /* LXFDislikeReasonsModel.swift */; };
+		FD5762321F9EF16100CA6E6E /* LXFBannerItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5762311F9EF16100CA6E6E /* LXFBannerItemModel.swift */; };
+		FD5762351F9F0E3400CA6E6E /* LXFRecommendTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5762341F9F0E3400CA6E6E /* LXFRecommendTopView.swift */; };
+		FD5762371F9F14E300CA6E6E /* LXFRecommendTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD5762361F9F14E300CA6E6E /* LXFRecommendTopView.xib */; };
+		FD57623A1F9F1C9D00CA6E6E /* LXFFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5762391F9F1C9D00CA6E6E /* LXFFlowLayout.swift */; };
+		FD57623E1F9F271F00CA6E6E /* LXFHomeRecLoginCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57623C1F9F271F00CA6E6E /* LXFHomeRecLoginCell.swift */; };
+		FD57623F1F9F271F00CA6E6E /* LXFHomeRecLoginCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD57623D1F9F271F00CA6E6E /* LXFHomeRecLoginCell.xib */; };
+		FD5762421F9F27F100CA6E6E /* LXFHomeRecCellTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5762411F9F27F100CA6E6E /* LXFHomeRecCellTopView.swift */; };
+		FD5762441F9F280900CA6E6E /* LXFHomeRecCellTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD5762431F9F280900CA6E6E /* LXFHomeRecCellTopView.xib */; };
+		FD5762461F9F2D8900CA6E6E /* LXFHomeRecAdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5762451F9F2D8900CA6E6E /* LXFHomeRecAdCell.swift */; };
+		FD5762481F9F30B800CA6E6E /* LXFHomeRecNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5762471F9F30B800CA6E6E /* LXFHomeRecNormalCell.swift */; };
+		FD57624A1F9F311100CA6E6E /* LXFHomeRecBaseCellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5762491F9F311100CA6E6E /* LXFHomeRecBaseCellable.swift */; };
+		FD57624C1F9F34EE00CA6E6E /* LXFHomeRecRecommendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD57624B1F9F34EE00CA6E6E /* LXFHomeRecRecommendCell.swift */; };
 		FD58A1FC1F9BA1070007B72F /* LXFHomeLiveTopHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD58A1FB1F9BA1070007B72F /* LXFHomeLiveTopHeader.xib */; };
 		FD58A2051F9C472B0007B72F /* LXFBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD58A2041F9C472B0007B72F /* LXFBannerView.swift */; };
 		FD58A2081F9C49D50007B72F /* LXFBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD58A2061F9C49D50007B72F /* LXFBannerCell.swift */; };
@@ -96,6 +117,8 @@
 		6D849CBB5A2225E820B9AA1A /* Pods-LXFBiliBili.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXFBiliBili.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LXFBiliBili/Pods-LXFBiliBili.debug.xcconfig"; sourceTree = "<group>"; };
 		989362A35B5A567644832EE8 /* Pods_LXFBiliBili.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LXFBiliBili.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD174AA51F9ADCFB00C01711 /* LXFRecommendDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFRecommendDataModel.swift; sourceTree = "<group>"; };
+		FD2A3CC31F9F366E00F946A3 /* LXFHomeRecArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFHomeRecArticleCell.swift; sourceTree = "<group>"; };
+		FD2A3CC51F9F37E300F946A3 /* LXFHomeRecBangumiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFHomeRecBangumiCell.swift; sourceTree = "<group>"; };
 		FD3102741F9791BA00817268 /* LXFNavSearchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFNavSearchable.swift; sourceTree = "<group>"; };
 		FD3102811F97AD1A00817268 /* LXFMenuBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFMenuBottomView.swift; sourceTree = "<group>"; };
 		FD3102831F97AD2400817268 /* LXFMenuBottomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LXFMenuBottomView.xib; sourceTree = "<group>"; };
@@ -122,6 +145,25 @@
 		FD53FECF1F989791001BEB63 /* LXFMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFMenuView.swift; sourceTree = "<group>"; };
 		FD53FED11F989970001BEB63 /* LXFMenuTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFMenuTopView.swift; sourceTree = "<group>"; };
 		FD53FED31F989978001BEB63 /* LXFMenuTopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LXFMenuTopView.xib; sourceTree = "<group>"; };
+		FD5762201F9EDBD500CA6E6E /* CALayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Extension.swift"; sourceTree = "<group>"; };
+		FD5762231F9EE33400CA6E6E /* LXFRecommendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFRecommendController.swift; sourceTree = "<group>"; };
+		FD5762261F9EEA7100CA6E6E /* LXFRecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFRecommendViewModel.swift; sourceTree = "<group>"; };
+		FD5762291F9EEB2700CA6E6E /* LXFHomeRecommendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFHomeRecommendModel.swift; sourceTree = "<group>"; };
+		FD57622B1F9EED6900CA6E6E /* LXFTagModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFTagModel.swift; sourceTree = "<group>"; };
+		FD57622D1F9EED7A00CA6E6E /* LXFCountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFCountModel.swift; sourceTree = "<group>"; };
+		FD57622F1F9EEEE700CA6E6E /* LXFDislikeReasonsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFDislikeReasonsModel.swift; sourceTree = "<group>"; };
+		FD5762311F9EF16100CA6E6E /* LXFBannerItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFBannerItemModel.swift; sourceTree = "<group>"; };
+		FD5762341F9F0E3400CA6E6E /* LXFRecommendTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFRecommendTopView.swift; sourceTree = "<group>"; };
+		FD5762361F9F14E300CA6E6E /* LXFRecommendTopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LXFRecommendTopView.xib; sourceTree = "<group>"; };
+		FD5762391F9F1C9D00CA6E6E /* LXFFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFFlowLayout.swift; sourceTree = "<group>"; };
+		FD57623C1F9F271F00CA6E6E /* LXFHomeRecLoginCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFHomeRecLoginCell.swift; sourceTree = "<group>"; };
+		FD57623D1F9F271F00CA6E6E /* LXFHomeRecLoginCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LXFHomeRecLoginCell.xib; sourceTree = "<group>"; };
+		FD5762411F9F27F100CA6E6E /* LXFHomeRecCellTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFHomeRecCellTopView.swift; sourceTree = "<group>"; };
+		FD5762431F9F280900CA6E6E /* LXFHomeRecCellTopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LXFHomeRecCellTopView.xib; sourceTree = "<group>"; };
+		FD5762451F9F2D8900CA6E6E /* LXFHomeRecAdCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFHomeRecAdCell.swift; sourceTree = "<group>"; };
+		FD5762471F9F30B800CA6E6E /* LXFHomeRecNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFHomeRecNormalCell.swift; sourceTree = "<group>"; };
+		FD5762491F9F311100CA6E6E /* LXFHomeRecBaseCellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFHomeRecBaseCellable.swift; sourceTree = "<group>"; };
+		FD57624B1F9F34EE00CA6E6E /* LXFHomeRecRecommendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFHomeRecRecommendCell.swift; sourceTree = "<group>"; };
 		FD58A1FB1F9BA1070007B72F /* LXFHomeLiveTopHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LXFHomeLiveTopHeader.xib; sourceTree = "<group>"; };
 		FD58A2041F9C472B0007B72F /* LXFBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFBannerView.swift; sourceTree = "<group>"; };
 		FD58A2061F9C49D50007B72F /* LXFBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFBannerCell.swift; sourceTree = "<group>"; };
@@ -251,6 +293,7 @@
 		3ADB72951F949A3F0047D15A /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
+				FD5762381F9F1C7D00CA6E6E /* LXFFlowLayout */,
 				FD58A2011F9C3C700007B72F /* LXFBannerView */,
 				FDA8C2CA1F96473000A59982 /* LXFMenuPageController */,
 				3ADB72961F949A3F0047D15A /* LXFBaseNavigationController */,
@@ -276,6 +319,7 @@
 				FDF9AFD51F98A41B0099D981 /* UIView+Extension.swift */,
 				FD6859781F99EDD40048D69F /* RxAlamofire+ObjectMapper.swift */,
 				FD344C101F9D8F590027E618 /* Array+Extension.swift */,
+				FD5762201F9EDBD500CA6E6E /* CALayer+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -375,6 +419,72 @@
 				FD8A7C1B1F9B866A001DC475 /* LXFHomeLiveFooter.xib */,
 				FD344C121F9D97E70027E618 /* LXFHomeLiveBottomFooter.swift */,
 				FD344C131F9D97E70027E618 /* LXFHomeLiveBottomFooter.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FD5762221F9EE05400CA6E6E /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+				FD5762331F9F0E1300CA6E6E /* View */,
+				FD5762281F9EEAFB00CA6E6E /* Model */,
+				FD5762251F9EEA5A00CA6E6E /* ViewModel */,
+				FD5762231F9EE33400CA6E6E /* LXFRecommendController.swift */,
+			);
+			path = Recommend;
+			sourceTree = "<group>";
+		};
+		FD5762251F9EEA5A00CA6E6E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FD5762261F9EEA7100CA6E6E /* LXFRecommendViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FD5762281F9EEAFB00CA6E6E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FD5762291F9EEB2700CA6E6E /* LXFHomeRecommendModel.swift */,
+				FD57622B1F9EED6900CA6E6E /* LXFTagModel.swift */,
+				FD57622D1F9EED7A00CA6E6E /* LXFCountModel.swift */,
+				FD57622F1F9EEEE700CA6E6E /* LXFDislikeReasonsModel.swift */,
+				FD5762311F9EF16100CA6E6E /* LXFBannerItemModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FD5762331F9F0E1300CA6E6E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FD57623B1F9F1E8100CA6E6E /* Cell */,
+				FD5762341F9F0E3400CA6E6E /* LXFRecommendTopView.swift */,
+				FD5762361F9F14E300CA6E6E /* LXFRecommendTopView.xib */,
+				FD5762491F9F311100CA6E6E /* LXFHomeRecBaseCellable.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FD5762381F9F1C7D00CA6E6E /* LXFFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				FD5762391F9F1C9D00CA6E6E /* LXFFlowLayout.swift */,
+			);
+			path = LXFFlowLayout;
+			sourceTree = "<group>";
+		};
+		FD57623B1F9F1E8100CA6E6E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FD57623C1F9F271F00CA6E6E /* LXFHomeRecLoginCell.swift */,
+				FD57623D1F9F271F00CA6E6E /* LXFHomeRecLoginCell.xib */,
+				FD5762451F9F2D8900CA6E6E /* LXFHomeRecAdCell.swift */,
+				FD5762471F9F30B800CA6E6E /* LXFHomeRecNormalCell.swift */,
+				FD57624B1F9F34EE00CA6E6E /* LXFHomeRecRecommendCell.swift */,
+				FD2A3CC31F9F366E00F946A3 /* LXFHomeRecArticleCell.swift */,
+				FD2A3CC51F9F37E300F946A3 /* LXFHomeRecBangumiCell.swift */,
+				FD5762411F9F27F100CA6E6E /* LXFHomeRecCellTopView.swift */,
+				FD5762431F9F280900CA6E6E /* LXFHomeRecCellTopView.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -500,6 +610,7 @@
 		FDE4B48E1F94D63E0075403D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FD5762221F9EE05400CA6E6E /* Recommend */,
 				FD68597C1F9ACE130048D69F /* Live */,
 			);
 			path = Controller;
@@ -620,8 +731,11 @@
 				FD4C8A561F99CC7E006A0E9D /* LXFMessageTipView.xib in Resources */,
 				FD8A7C191F9B865C001DC475 /* LXFHomeLiveHeader.xib in Resources */,
 				FD53FED41F989978001BEB63 /* LXFMenuTopView.xib in Resources */,
+				FD5762371F9F14E300CA6E6E /* LXFRecommendTopView.xib in Resources */,
+				FD57623F1F9F271F00CA6E6E /* LXFHomeRecLoginCell.xib in Resources */,
 				FD344C0E1F9CE2F70027E618 /* LXFHomeLiveBannerDataHeader.xib in Resources */,
 				FD31028F1F9834B500817268 /* LXFMainAvatarView.xib in Resources */,
+				FD5762441F9F280900CA6E6E /* LXFHomeRecCellTopView.xib in Resources */,
 				FD361C811F9B2E3200C6D113 /* LXFHomeLiveCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -719,21 +833,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD2A3CC61F9F37E300F946A3 /* LXFHomeRecBangumiCell.swift in Sources */,
+				FD57622A1F9EEB2700CA6E6E /* LXFHomeRecommendModel.swift in Sources */,
+				FD5762461F9F2D8900CA6E6E /* LXFHomeRecAdCell.swift in Sources */,
 				FDA8C2CE1F972CE100A59982 /* UIImage+Extension.swift in Sources */,
+				FD5762351F9F0E3400CA6E6E /* LXFRecommendTopView.swift in Sources */,
 				FD53FECE1F987F41001BEB63 /* LXFNavGameable.swift in Sources */,
 				FD3102821F97AD1A00817268 /* LXFMenuBottomView.swift in Sources */,
+				FD5762241F9EE33400CA6E6E /* LXFRecommendController.swift in Sources */,
+				FD5762271F9EEA7100CA6E6E /* LXFRecommendViewModel.swift in Sources */,
 				FD174AA61F9ADCFB00C01711 /* LXFRecommendDataModel.swift in Sources */,
 				FD3102911F98405C00817268 /* UINavigationBar+FixSpace.swift in Sources */,
 				FDF9AFDD1F98AE890099D981 /* LXFMenuViewModel.swift in Sources */,
 				FD31F19F1F9ADA3300CB7C6E /* LXFPartitionsModel.swift in Sources */,
 				FDA8C2CC1F96478600A59982 /* LXFMenuPageController.swift in Sources */,
 				FD8A7C211F9B8A33001DC475 /* LXFViewHeightProtocol.swift in Sources */,
+				FD57622E1F9EED7A00CA6E6E /* LXFCountModel.swift in Sources */,
 				FD8A7C1C1F9B866A001DC475 /* LXFHomeLiveFooter.swift in Sources */,
 				FD5CF3BB1F9ADE5C006F4A80 /* LXFOwnerModel.swift in Sources */,
 				FD3102891F97B88B00817268 /* LXFNibloadable.swift in Sources */,
+				FD5762421F9F27F100CA6E6E /* LXFHomeRecCellTopView.swift in Sources */,
 				FD6859791F99EDD40048D69F /* RxAlamofire+ObjectMapper.swift in Sources */,
 				FD6859851F9AD1500048D69F /* LXFBannerModel.swift in Sources */,
 				FD6F60B01F95F38100DEB351 /* LXFTabBarControllerAnimatedTransitioning.swift in Sources */,
+				FD5762301F9EEEE700CA6E6E /* LXFDislikeReasonsModel.swift in Sources */,
+				FD57622C1F9EED6900CA6E6E /* LXFTagModel.swift in Sources */,
 				FDF9AFE31F98CB7E0099D981 /* LXFViewModel.swift in Sources */,
 				FDE4B4A01F94D67F0075403D /* LXFMessageController.swift in Sources */,
 				FDF57EC51F9DD39F003752FD /* Refreshable.swift in Sources */,
@@ -741,6 +865,7 @@
 				FD3102931F98425000817268 /* Runtime+Extension.swift in Sources */,
 				FD58A2081F9C49D50007B72F /* LXFBannerCell.swift in Sources */,
 				3ADB729B1F949A470047D15A /* UIColor+Extension.swift in Sources */,
+				FD57624A1F9F311100CA6E6E /* LXFHomeRecBaseCellable.swift in Sources */,
 				FD361C801F9B2E3200C6D113 /* LXFHomeLiveCell.swift in Sources */,
 				FD68598B1F9AD6D50048D69F /* LXFLiveModel.swift in Sources */,
 				FD344C0D1F9CE2F70027E618 /* LXFHomeLiveBannerDataHeader.swift in Sources */,
@@ -761,9 +886,15 @@
 				FD8A7C151F9B8433001DC475 /* LXFHomeLiveTopHeader.swift in Sources */,
 				FD6859831F9AD1370048D69F /* LXFEntranceIconModel.swift in Sources */,
 				FD4C8A581F99D747006A0E9D /* LXFRequestUrl.swift in Sources */,
+				FD57623E1F9F271F00CA6E6E /* LXFHomeRecLoginCell.swift in Sources */,
 				FDFB6E2E1F94D75A007544D6 /* LXFCategoryController.swift in Sources */,
 				FDF9AFD91F98A9470099D981 /* LXFMenuViewCell.swift in Sources */,
+				FD5762481F9F30B800CA6E6E /* LXFHomeRecNormalCell.swift in Sources */,
+				FD2A3CC41F9F366E00F946A3 /* LXFHomeRecArticleCell.swift in Sources */,
+				FD5762211F9EDBD500CA6E6E /* CALayer+Extension.swift in Sources */,
+				FD5762321F9EF16100CA6E6E /* LXFBannerItemModel.swift in Sources */,
 				FDA8C2C91F960C9700A59982 /* LXFNavAvatarable.swift in Sources */,
+				FD57623A1F9F1C9D00CA6E6E /* LXFFlowLayout.swift in Sources */,
 				FDE4B49C1F94D6610075403D /* LXFAttentionController.swift in Sources */,
 				FD4C8A541F99CC73006A0E9D /* LXFMessageTipView.swift in Sources */,
 				FD344C141F9D97E70027E618 /* LXFHomeLiveBottomFooter.swift in Sources */,
@@ -775,6 +906,7 @@
 				FD5CF3C81F9AEC20006F4A80 /* LXFLiveTopCategoryCell.swift in Sources */,
 				3ADB72871F9489700047D15A /* AppDelegate.swift in Sources */,
 				FD53FED21F989970001BEB63 /* LXFMenuTopView.swift in Sources */,
+				FD57624C1F9F34EE00CA6E6E /* LXFHomeRecRecommendCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

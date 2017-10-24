@@ -49,8 +49,6 @@ extension LXFHomeController: LXFNavAvatarable, LXFNavSearchable, LXFNavDownloada
         self.game {
             LXFLog("游戏")
         }
-        
-        
     }
 }
 // MARK:- 初始化Page
@@ -80,6 +78,8 @@ extension LXFHomeController {
             make.top.left.right.bottom.equalToSuperview()
         }
         pageVc.reloadData()
+        // 设置起始页
+        pageVc.pagerController.scrollToController(at: 1, animate: false)
     }
 }
 
@@ -91,6 +91,8 @@ extension LXFHomeController: TYTabPagerControllerDelegate, TYTabPagerControllerD
     func tabPagerController(_ tabPagerController: TYTabPagerController, controllerFor index: Int, prefetching: Bool) -> UIViewController {
         if index == 0 {
             return LXFLiveViewController()
+        } else if index == 1 {
+            return LXFRecommendController()
         }
         let vc = UIViewController()
         vc.view.backgroundColor = kThemeBackgroundColor
