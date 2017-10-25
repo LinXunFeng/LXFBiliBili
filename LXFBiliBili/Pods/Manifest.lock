@@ -32,6 +32,7 @@ PODS:
   - SnapKit (4.0.0)
   - SwiftyJSON (3.1.4)
   - Then (2.2.0)
+  - Timepiece (1.3.1)
   - TYCyclePagerView (1.0.2)
   - TYPagerController (2.0.6)
 
@@ -50,6 +51,7 @@ DEPENDENCIES:
   - SnapKit
   - SwiftyJSON
   - Then
+  - Timepiece
   - TYCyclePagerView
   - TYPagerController
 
@@ -69,9 +71,10 @@ SPEC CHECKSUMS:
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   Then: 823f9813e1d4d0a814a5ba15e9c9d33ec7aca631
+  Timepiece: c0760ec0e545697d86b80424dcd2b4d5ef66cf51
   TYCyclePagerView: c51924fa62092cca3f0cac326eb87c3c919f7597
   TYPagerController: 043c9063b53cc6d3f6eb937c9dcbf431ae7cad85
 
-PODFILE CHECKSUM: c7e901426acc44527db095299b79b572797d2da9
+PODFILE CHECKSUM: 4c8c71835d5091e202b48e8d16eda61cf7d31237
 
 COCOAPODS: 1.4.0.beta.1

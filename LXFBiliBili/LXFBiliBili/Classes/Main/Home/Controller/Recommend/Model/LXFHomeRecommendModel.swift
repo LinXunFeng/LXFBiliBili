@@ -37,6 +37,16 @@ struct LXFHomeRecommendModel: Mappable {
         goto <- map["goto"]
         face <- map["face"]
         desc <- map["desc"]
+        
+        area <- map["area"]
+        area_id <- map["area_id"]
+        area2 <- map["area2"]
+        online <- map["online"]
+        children <- map["children"]
+        rcmd_reason <- map["rcmd_reason"]
+        
+        hash <- map["hash"]
+        banner_item <- map["banner_item"]
     }
     
     var tname: String?
@@ -62,9 +72,15 @@ struct LXFHomeRecommendModel: Mappable {
     var face: String?
     var desc: String?
     
+    var area: String?
+    var area_id: Int = 0
+    var area2: LXFArea2Model?
+    var online: Int = 0
+    var children: LXFChildrenModel?
+    var rcmd_reason: LXFRcmdreasonModel?
+    
     var hash: String?
     var banner_item: [LXFBannerItemModel]?
-    
 }
 
 

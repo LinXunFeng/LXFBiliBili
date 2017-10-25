@@ -18,6 +18,11 @@
 		FD174AA61F9ADCFB00C01711 /* LXFRecommendDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD174AA51F9ADCFB00C01711 /* LXFRecommendDataModel.swift */; };
 		FD2A3CC41F9F366E00F946A3 /* LXFHomeRecArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2A3CC31F9F366E00F946A3 /* LXFHomeRecArticleCell.swift */; };
 		FD2A3CC61F9F37E300F946A3 /* LXFHomeRecBangumiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2A3CC51F9F37E300F946A3 /* LXFHomeRecBangumiCell.swift */; };
+		FD2A3CC91FA01DA400F946A3 /* LXFArea2Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2A3CC81FA01DA400F946A3 /* LXFArea2Model.swift */; };
+		FD2A3CCB1FA01DD200F946A3 /* LXFChildrenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2A3CCA1FA01DD200F946A3 /* LXFChildrenModel.swift */; };
+		FD2A3CCD1FA030AF00F946A3 /* LXFRcmdreasonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2A3CCC1FA030AF00F946A3 /* LXFRcmdreasonModel.swift */; };
+		FD2A3CD11FA076C200F946A3 /* LXFHomeRecNormalHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2A3CCF1FA076C200F946A3 /* LXFHomeRecNormalHeader.swift */; };
+		FD2A3CD21FA076C200F946A3 /* LXFHomeRecNormalHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD2A3CD01FA076C200F946A3 /* LXFHomeRecNormalHeader.xib */; };
 		FD3102751F9791BA00817268 /* LXFNavSearchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3102741F9791BA00817268 /* LXFNavSearchable.swift */; };
 		FD3102821F97AD1A00817268 /* LXFMenuBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3102811F97AD1A00817268 /* LXFMenuBottomView.swift */; };
 		FD3102841F97AD2400817268 /* LXFMenuBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD3102831F97AD2400817268 /* LXFMenuBottomView.xib */; };
@@ -80,6 +85,9 @@
 		FD6859891F9AD4B40048D69F /* LXFIconModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6859881F9AD4B40048D69F /* LXFIconModel.swift */; };
 		FD68598B1F9AD6D50048D69F /* LXFLiveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD68598A1F9AD6D50048D69F /* LXFLiveModel.swift */; };
 		FD6F60B01F95F38100DEB351 /* LXFTabBarControllerAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6F60AF1F95F38100DEB351 /* LXFTabBarControllerAnimatedTransitioning.swift */; };
+		FD73E3B31FA079F000A0C23A /* LXFHomeRecBannerHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD73E3B21FA079F000A0C23A /* LXFHomeRecBannerHeader.swift */; };
+		FD73E3BC1FA0928F00A0C23A /* LXFPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD73E3BB1FA0928F00A0C23A /* LXFPlayViewController.swift */; };
+		FD73E3BE1FA094A400A0C23A /* LXFNavBackable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD73E3BD1FA094A400A0C23A /* LXFNavBackable.swift */; };
 		FD8A7C151F9B8433001DC475 /* LXFHomeLiveTopHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8A7C141F9B8433001DC475 /* LXFHomeLiveTopHeader.swift */; };
 		FD8A7C181F9B865C001DC475 /* LXFHomeLiveHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8A7C161F9B865C001DC475 /* LXFHomeLiveHeader.swift */; };
 		FD8A7C191F9B865C001DC475 /* LXFHomeLiveHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD8A7C171F9B865C001DC475 /* LXFHomeLiveHeader.xib */; };
@@ -119,6 +127,11 @@
 		FD174AA51F9ADCFB00C01711 /* LXFRecommendDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFRecommendDataModel.swift; sourceTree = "<group>"; };
 		FD2A3CC31F9F366E00F946A3 /* LXFHomeRecArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFHomeRecArticleCell.swift; sourceTree = "<group>"; };
 		FD2A3CC51F9F37E300F946A3 /* LXFHomeRecBangumiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFHomeRecBangumiCell.swift; sourceTree = "<group>"; };
+		FD2A3CC81FA01DA400F946A3 /* LXFArea2Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFArea2Model.swift; sourceTree = "<group>"; };
+		FD2A3CCA1FA01DD200F946A3 /* LXFChildrenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFChildrenModel.swift; sourceTree = "<group>"; };
+		FD2A3CCC1FA030AF00F946A3 /* LXFRcmdreasonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFRcmdreasonModel.swift; sourceTree = "<group>"; };
+		FD2A3CCF1FA076C200F946A3 /* LXFHomeRecNormalHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFHomeRecNormalHeader.swift; sourceTree = "<group>"; };
+		FD2A3CD01FA076C200F946A3 /* LXFHomeRecNormalHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LXFHomeRecNormalHeader.xib; sourceTree = "<group>"; };
 		FD3102741F9791BA00817268 /* LXFNavSearchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFNavSearchable.swift; sourceTree = "<group>"; };
 		FD3102811F97AD1A00817268 /* LXFMenuBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFMenuBottomView.swift; sourceTree = "<group>"; };
 		FD3102831F97AD2400817268 /* LXFMenuBottomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LXFMenuBottomView.xib; sourceTree = "<group>"; };
@@ -181,6 +194,9 @@
 		FD6859881F9AD4B40048D69F /* LXFIconModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFIconModel.swift; sourceTree = "<group>"; };
 		FD68598A1F9AD6D50048D69F /* LXFLiveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFLiveModel.swift; sourceTree = "<group>"; };
 		FD6F60AF1F95F38100DEB351 /* LXFTabBarControllerAnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFTabBarControllerAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		FD73E3B21FA079F000A0C23A /* LXFHomeRecBannerHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFHomeRecBannerHeader.swift; sourceTree = "<group>"; };
+		FD73E3BB1FA0928F00A0C23A /* LXFPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFPlayViewController.swift; sourceTree = "<group>"; };
+		FD73E3BD1FA094A400A0C23A /* LXFNavBackable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFNavBackable.swift; sourceTree = "<group>"; };
 		FD8A7C141F9B8433001DC475 /* LXFHomeLiveTopHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFHomeLiveTopHeader.swift; sourceTree = "<group>"; };
 		FD8A7C161F9B865C001DC475 /* LXFHomeLiveHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXFHomeLiveHeader.swift; sourceTree = "<group>"; };
 		FD8A7C171F9B865C001DC475 /* LXFHomeLiveHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LXFHomeLiveHeader.xib; sourceTree = "<group>"; };
@@ -341,6 +357,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FD2A3CCE1FA0768400F946A3 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				FD2A3CCF1FA076C200F946A3 /* LXFHomeRecNormalHeader.swift */,
+				FD2A3CD01FA076C200F946A3 /* LXFHomeRecNormalHeader.xib */,
+				FD73E3B21FA079F000A0C23A /* LXFHomeRecBannerHeader.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
 		FD3102731F97919800817268 /* UINavigationBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -348,6 +374,7 @@
 				FD3102741F9791BA00817268 /* LXFNavSearchable.swift */,
 				FDFC64B61F9866A60046FF11 /* LXFNavDownloadable.swift */,
 				FD53FECD1F987F41001BEB63 /* LXFNavGameable.swift */,
+				FD73E3BD1FA094A400A0C23A /* LXFNavBackable.swift */,
 			);
 			path = UINavigationBar;
 			sourceTree = "<group>";
@@ -409,16 +436,6 @@
 			children = (
 				FD361C7E1F9B2E3200C6D113 /* LXFHomeLiveCell.swift */,
 				FD361C7F1F9B2E3200C6D113 /* LXFHomeLiveCell.xib */,
-				FD8A7C141F9B8433001DC475 /* LXFHomeLiveTopHeader.swift */,
-				FD58A1FB1F9BA1070007B72F /* LXFHomeLiveTopHeader.xib */,
-				FD8A7C161F9B865C001DC475 /* LXFHomeLiveHeader.swift */,
-				FD8A7C171F9B865C001DC475 /* LXFHomeLiveHeader.xib */,
-				FD344C0B1F9CE2F70027E618 /* LXFHomeLiveBannerDataHeader.swift */,
-				FD344C0C1F9CE2F70027E618 /* LXFHomeLiveBannerDataHeader.xib */,
-				FD8A7C1A1F9B866A001DC475 /* LXFHomeLiveFooter.swift */,
-				FD8A7C1B1F9B866A001DC475 /* LXFHomeLiveFooter.xib */,
-				FD344C121F9D97E70027E618 /* LXFHomeLiveBottomFooter.swift */,
-				FD344C131F9D97E70027E618 /* LXFHomeLiveBottomFooter.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -450,6 +467,9 @@
 				FD57622D1F9EED7A00CA6E6E /* LXFCountModel.swift */,
 				FD57622F1F9EEEE700CA6E6E /* LXFDislikeReasonsModel.swift */,
 				FD5762311F9EF16100CA6E6E /* LXFBannerItemModel.swift */,
+				FD2A3CC81FA01DA400F946A3 /* LXFArea2Model.swift */,
+				FD2A3CCA1FA01DD200F946A3 /* LXFChildrenModel.swift */,
+				FD2A3CCC1FA030AF00F946A3 /* LXFRcmdreasonModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -457,6 +477,7 @@
 		FD5762331F9F0E1300CA6E6E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FD2A3CCE1FA0768400F946A3 /* Header */,
 				FD57623B1F9F1E8100CA6E6E /* Cell */,
 				FD5762341F9F0E3400CA6E6E /* LXFRecommendTopView.swift */,
 				FD5762361F9F14E300CA6E6E /* LXFRecommendTopView.xib */,
@@ -510,6 +531,7 @@
 		FD5CF3C11F9AE996006F4A80 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FD73E3B41FA0840F00A0C23A /* Header */,
 				FD361C821F9B32A500C6D113 /* Cell */,
 				FD361C7D1F9B2E0900C6D113 /* Top */,
 			);
@@ -541,6 +563,31 @@
 				FD5CF3BA1F9ADE5C006F4A80 /* LXFOwnerModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FD73E3B41FA0840F00A0C23A /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				FD8A7C141F9B8433001DC475 /* LXFHomeLiveTopHeader.swift */,
+				FD58A1FB1F9BA1070007B72F /* LXFHomeLiveTopHeader.xib */,
+				FD8A7C161F9B865C001DC475 /* LXFHomeLiveHeader.swift */,
+				FD8A7C171F9B865C001DC475 /* LXFHomeLiveHeader.xib */,
+				FD344C0B1F9CE2F70027E618 /* LXFHomeLiveBannerDataHeader.swift */,
+				FD344C0C1F9CE2F70027E618 /* LXFHomeLiveBannerDataHeader.xib */,
+				FD8A7C1A1F9B866A001DC475 /* LXFHomeLiveFooter.swift */,
+				FD8A7C1B1F9B866A001DC475 /* LXFHomeLiveFooter.xib */,
+				FD344C121F9D97E70027E618 /* LXFHomeLiveBottomFooter.swift */,
+				FD344C131F9D97E70027E618 /* LXFHomeLiveBottomFooter.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		FD73E3BA1FA0927100A0C23A /* Play */ = {
+			isa = PBXGroup;
+			children = (
+				FD73E3BB1FA0928F00A0C23A /* LXFPlayViewController.swift */,
+			);
+			path = Play;
 			sourceTree = "<group>";
 		};
 		FDA8C2C71F960C5800A59982 /* Protocol */ = {
@@ -610,6 +657,7 @@
 		FDE4B48E1F94D63E0075403D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FD73E3BA1FA0927100A0C23A /* Play */,
 				FD5762221F9EE05400CA6E6E /* Recommend */,
 				FD68597C1F9ACE130048D69F /* Live */,
 			);
@@ -722,6 +770,7 @@
 				FD3102841F97AD2400817268 /* LXFMenuBottomView.xib in Resources */,
 				FD4C8A521F99C788006A0E9D /* LXFAttentionTipLoginView.xib in Resources */,
 				FD344C151F9D97E70027E618 /* LXFHomeLiveBottomFooter.xib in Resources */,
+				FD2A3CD21FA076C200F946A3 /* LXFHomeRecNormalHeader.xib in Resources */,
 				FD58A1FC1F9BA1070007B72F /* LXFHomeLiveTopHeader.xib in Resources */,
 				3A56A06D1F94888800EF0BE2 /* LaunchScreen.storyboard in Resources */,
 				FD5CF3C91F9AEC20006F4A80 /* LXFLiveTopCategoryCell.xib in Resources */,
@@ -785,6 +834,7 @@
 				"${BUILT_PRODUCTS_DIR}/TYCyclePagerView/TYCyclePagerView.framework",
 				"${BUILT_PRODUCTS_DIR}/TYPagerController/TYPagerController.framework",
 				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
+				"${BUILT_PRODUCTS_DIR}/Timepiece/Timepiece.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -805,6 +855,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TYCyclePagerView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TYPagerController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Timepiece.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -838,6 +889,7 @@
 				FD5762461F9F2D8900CA6E6E /* LXFHomeRecAdCell.swift in Sources */,
 				FDA8C2CE1F972CE100A59982 /* UIImage+Extension.swift in Sources */,
 				FD5762351F9F0E3400CA6E6E /* LXFRecommendTopView.swift in Sources */,
+				FD73E3B31FA079F000A0C23A /* LXFHomeRecBannerHeader.swift in Sources */,
 				FD53FECE1F987F41001BEB63 /* LXFNavGameable.swift in Sources */,
 				FD3102821F97AD1A00817268 /* LXFMenuBottomView.swift in Sources */,
 				FD5762241F9EE33400CA6E6E /* LXFRecommendController.swift in Sources */,
@@ -854,12 +906,15 @@
 				FD3102891F97B88B00817268 /* LXFNibloadable.swift in Sources */,
 				FD5762421F9F27F100CA6E6E /* LXFHomeRecCellTopView.swift in Sources */,
 				FD6859791F99EDD40048D69F /* RxAlamofire+ObjectMapper.swift in Sources */,
+				FD73E3BE1FA094A400A0C23A /* LXFNavBackable.swift in Sources */,
 				FD6859851F9AD1500048D69F /* LXFBannerModel.swift in Sources */,
 				FD6F60B01F95F38100DEB351 /* LXFTabBarControllerAnimatedTransitioning.swift in Sources */,
+				FD2A3CCD1FA030AF00F946A3 /* LXFRcmdreasonModel.swift in Sources */,
 				FD5762301F9EEEE700CA6E6E /* LXFDislikeReasonsModel.swift in Sources */,
 				FD57622C1F9EED6900CA6E6E /* LXFTagModel.swift in Sources */,
 				FDF9AFE31F98CB7E0099D981 /* LXFViewModel.swift in Sources */,
 				FDE4B4A01F94D67F0075403D /* LXFMessageController.swift in Sources */,
+				FD2A3CD11FA076C200F946A3 /* LXFHomeRecNormalHeader.swift in Sources */,
 				FDF57EC51F9DD39F003752FD /* Refreshable.swift in Sources */,
 				FD4C8A501F99C780006A0E9D /* LXFAttentionTipLoginView.swift in Sources */,
 				FD3102931F98425000817268 /* Runtime+Extension.swift in Sources */,
@@ -867,6 +922,7 @@
 				3ADB729B1F949A470047D15A /* UIColor+Extension.swift in Sources */,
 				FD57624A1F9F311100CA6E6E /* LXFHomeRecBaseCellable.swift in Sources */,
 				FD361C801F9B2E3200C6D113 /* LXFHomeLiveCell.swift in Sources */,
+				FD73E3BC1FA0928F00A0C23A /* LXFPlayViewController.swift in Sources */,
 				FD68598B1F9AD6D50048D69F /* LXFLiveModel.swift in Sources */,
 				FD344C0D1F9CE2F70027E618 /* LXFHomeLiveBannerDataHeader.swift in Sources */,
 				FD31028D1F9834AD00817268 /* LXFMainAvatarView.swift in Sources */,
@@ -896,7 +952,9 @@
 				FDA8C2C91F960C9700A59982 /* LXFNavAvatarable.swift in Sources */,
 				FD57623A1F9F1C9D00CA6E6E /* LXFFlowLayout.swift in Sources */,
 				FDE4B49C1F94D6610075403D /* LXFAttentionController.swift in Sources */,
+				FD2A3CC91FA01DA400F946A3 /* LXFArea2Model.swift in Sources */,
 				FD4C8A541F99CC73006A0E9D /* LXFMessageTipView.swift in Sources */,
+				FD2A3CCB1FA01DD200F946A3 /* LXFChildrenModel.swift in Sources */,
 				FD344C141F9D97E70027E618 /* LXFHomeLiveBottomFooter.swift in Sources */,
 				FD31028B1F98307400817268 /* LXFSwitchTabBarItemable.swift in Sources */,
 				FDE4B49E1F94D66E0075403D /* LXFHomeController.swift in Sources */,

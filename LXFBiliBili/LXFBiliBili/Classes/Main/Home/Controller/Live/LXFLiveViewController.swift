@@ -35,6 +35,12 @@ class LXFLiveViewController: UIViewController, Refreshable {
         bindUI()
         
         refreshHeader.beginRefreshing()
+        
+        liveCollectionView.rx.modelSelected(LXFLiveModel.self).subscribe(onNext: { (model) in
+            let vc = LXFPlayViewController()
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }).disposed(by: rx.disposeBag)
     }
 }
 
@@ -59,7 +65,10 @@ extension LXFLiveViewController {
                 let dsSection = ds[indexPath.section]
                 if indexPath.section == 0 {
                     let topBannerView = cv.dequeue(Reusable.homeLiveTopHeader, kind: .header, for: indexPath)
-                    topBannerView.bannerArr.value = dsSection.banner!
+                    let bannerArr = dsSection.banner?.map({ (model) -> String in
+                        return model.img
+                    }) ?? []
+                    topBannerView.bannerArr.value = bannerArr
                     topBannerView.header.iconView.kf.setImage(with: URL(string: dsSection.normalHeader?.sub_icon?.src ?? ""))
                     topBannerView.header.titleLabel.text = dsSection.normalHeader?.name ?? ""
                     topBannerView.header.setliveCount(dsSection.normalHeader?.count ?? 0)
@@ -90,7 +99,6 @@ extension LXFLiveViewController {
         vmOutput = viewModel.transform(input: LXFLiveViewModel.LXFLiveInput())
         // 订阅cell的数据
         vmOutput?.sections.asDriver().drive(liveCollectionView.rx.items(dataSource: dataSource)).disposed(by: rx.disposeBag)
-        
         refreshHeader = initRefreshHeader(liveCollectionView) { [weak self] in
             self?.vmOutput?.requestCommand.onNext(())
         }

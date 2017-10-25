@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LXFHomeRecNormalHeader" id="U6b-Vx-4bR" customClass="LXFHomeRecNormalHeader" customModule="LXFBiliBili" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="164"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bLj-HT-L6o">
+                    <rect key="frame" x="8" y="8" width="304" height="98"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="bLj-HT-L6o" secondAttribute="height" multiplier="59:19" id="cYY-GW-5yD"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVB-Eo-VVX">
+                    <rect key="frame" x="295" y="136" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="Olh-Bt-PnY"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="cLF-pw-ur9"/>
+                        <constraint firstAttribute="width" constant="20" id="ci2-KM-mws"/>
+                        <constraint firstAttribute="height" constant="20" id="evA-Eu-CmQ"/>
+                    </constraints>
+                    <state key="normal" image="live_more_normal_landscape"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="人类崛起" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbd-OH-5dU">
+                    <rect key="frame" x="15" y="114" width="290" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="话题" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqu-Np-zcb">
+                    <rect key="frame" x="15" y="137" width="30" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="9Zz-7d-i9i"/>
+                        <constraint firstAttribute="height" constant="20" id="V52-qe-7aS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                            <color key="value" red="0.96078431372549022" green="0.46274509803921571" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="人类崛起" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yW6-1D-HEg">
+                    <rect key="frame" x="50" y="139" width="235" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="bbd-OH-5dU" secondAttribute="trailing" constant="15" id="4Fk-Io-6LI"/>
+                <constraint firstItem="jqu-Np-zcb" firstAttribute="top" secondItem="bbd-OH-5dU" secondAttribute="bottom" constant="5" id="638-mC-gds"/>
+                <constraint firstItem="bLj-HT-L6o" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="8" id="BwI-cX-LPN"/>
+                <constraint firstItem="bbd-OH-5dU" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="15" id="Hj0-SW-ZNo"/>
+                <constraint firstItem="yW6-1D-HEg" firstAttribute="centerY" secondItem="jqu-Np-zcb" secondAttribute="centerY" id="MWE-OJ-Ubg"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="HVB-Eo-VVX" secondAttribute="trailing" constant="5" id="OGo-lH-nQv"/>
+                <constraint firstItem="bbd-OH-5dU" firstAttribute="top" secondItem="bLj-HT-L6o" secondAttribute="bottom" constant="8" id="S1b-SS-ZiI"/>
+                <constraint firstItem="HVB-Eo-VVX" firstAttribute="leading" secondItem="yW6-1D-HEg" secondAttribute="trailing" constant="10" id="dL9-66-o2A"/>
+                <constraint firstItem="jqu-Np-zcb" firstAttribute="leading" secondItem="bbd-OH-5dU" secondAttribute="leading" id="dXQ-9a-xDl"/>
+                <constraint firstItem="yW6-1D-HEg" firstAttribute="leading" secondItem="jqu-Np-zcb" secondAttribute="trailing" constant="5" id="euk-Tx-0Ja"/>
+                <constraint firstItem="bLj-HT-L6o" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" constant="8" id="jjH-YM-csp"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="bLj-HT-L6o" secondAttribute="trailing" constant="8" id="k3P-cU-BCe"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="HVB-Eo-VVX" secondAttribute="bottom" constant="8" id="kNV-R4-Ivg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="categoryLabel" destination="jqu-Np-zcb" id="NXo-xJ-r7x"/>
+                <outlet property="descLabel" destination="yW6-1D-HEg" id="UY9-el-b2U"/>
+                <outlet property="iconView" destination="bLj-HT-L6o" id="Y9j-JW-9Zk"/>
+                <outlet property="moreBtn" destination="HVB-Eo-VVX" id="0Rh-6x-puv"/>
+                <outlet property="titleLabel" destination="bbd-OH-5dU" id="Ica-UK-a2K"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="109"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="live_more_normal_landscape" width="30" height="30"/>
+    </resources>
+</document>

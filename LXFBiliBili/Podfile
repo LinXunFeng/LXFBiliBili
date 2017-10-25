@@ -32,5 +32,6 @@ pod 'TYCyclePagerView'
 pod 'TYPagerController'
 pod 'SwiftyJSON'
 pod 'MJRefresh'
+pod 'Timepiece'
 
 end

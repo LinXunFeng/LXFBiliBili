@@ -21,7 +21,7 @@ extension LXFNavDownloadable where Self : UIViewController {
         let item = UIBarButtonItem(image: UIImage(named: "ic_toolbar"), style: UIBarButtonItemStyle.plain, target: nil, action: nil)
         item.rx.tap.do(onNext: {
             onNext()
-        }).subscribe().addDisposableTo(rx.disposeBag)
+        }).subscribe().disposed(by: rx.disposeBag)
         
         if (navigationItem.rightBarButtonItems?.count ?? 0) == 0 {
             navigationItem.rightBarButtonItems = [item]

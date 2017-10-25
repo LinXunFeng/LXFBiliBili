@@ -12,15 +12,18 @@ import RxCocoa
 import SnapKit
 import RxDataSources
 import ReusableKit
+import MJRefresh
+import Timepiece
 
-class LXFRecommendController: UIViewController {
+class LXFRecommendController: UIViewController, Refreshable {
     
     // viewModel
     private var viewModel = LXFRecommendViewModel()
-    
+    private var vmOutput: LXFRecommendViewModel.LXFRecommendOutput?
     
     // View
     private var recommendCollectionView: UICollectionView!
+    private var refreshHeader: MJRefreshHeader?
     
     var dataSource : RxCollectionViewSectionedReloadDataSource<LXFRecommendSection>!
 
@@ -29,25 +32,81 @@ class LXFRecommendController: UIViewController {
         
         initUI()
         bindUI()
+        
+        refreshHeader?.beginRefreshing()
     }
 }
 
 extension LXFRecommendController {
     private func bindUI() {
         dataSource = RxCollectionViewSectionedReloadDataSource<LXFRecommendSection>(configureCell: { (ds, cv, ip, item) in
-            let cell = cv.dequeue(Reusable.homeRecLoginCell, for: ip)
+            var isAd = false
+            var cell: UICollectionViewCell!
+            // ["login", "ad_web_s", "av", "article_s", "bangumi"]
+            if item.goto! == "login" {
+                cell = cv.dequeue(Reusable.homeRecLoginCell, for: ip)
+            } else if item.goto! == "ad_web_s" {
+                isAd = true
+                cell = cv.dequeue(Reusable.homeRecAdCell, for: ip)
+            } else if item.goto! == "av" {
+                if item.rcmd_reason != nil {
+                    cell = cv.dequeue(Reusable.homeRecRecommendCell, for: ip)
+                } else {
+                    cell = cv.dequeue(Reusable.homeRecBangumiCell, for: ip)
+                }
+            } else if item.goto! == "article_s" {
+                cell = cv.dequeue(Reusable.homeRecArticleCell, for: ip)
+            } else if item.goto! == "bangumi" {
+                cell = cv.dequeue(Reusable.homeRecBangumiCell, for: ip)
+            }
+            
+            let baseView = (cell as! LXFHomeRecBaseCellable).baseView
+            let date = Date(timeIntervalSinceNow: TimeInterval(item.ctime))
+            baseView?.timeLabel.text = String(format: "%02d:%02d", date.hour, date.minute)
+            baseView?.iconView.kf.setImage(with: URL(string: item.cover ?? ""))
+            baseView?.playCountLabel.text = "\(item.play)"
+            baseView?.danmukuCountLabel.text = "\(item.danmaku)"
+            baseView?.titleLabel.text = item.title
+            
+            baseView?.timeLabel.isHidden = isAd
+            baseView?.danmukuCountLabel.isHidden = isAd
+            baseView?.playCountLabel.isHidden = isAd
+            baseView?.playIconView.isHidden = isAd
+            baseView?.danmukuIconView.isHidden = isAd
+            
             return cell
         }, configureSupplementaryView: { (ds, cv, kind, ip) in
-            return cv.dequeue(Reusable.homeLiveTopHeader, kind: kind, for: ip)
+            // return cv.dequeue(Reusable.homeRecBannerHeader, kind: kind, for: ip)
+            guard let header = ds[ip.section].header, let goto = header.goto, kind != UICollectionElementKindSectionFooter else {
+                return cv.dequeue(Reusable.homeRecBannerHeader, kind: kind, for: ip)
+            }
+            // ["topic", "special", "banner", "converge", "rank", "tag"]
+            if goto == "banner" {    // 轮播
+                let banner = cv.dequeue(Reusable.homeRecBannerHeader, kind: kind, for: ip)
+                let bannerImgs = header.banner_item?.map({ (item) -> String in
+                    return item.image ?? ""
+                }) ?? []
+                 banner.bannerArr.value = bannerImgs
+                return banner
+            } else { // 话题 小视频
+                let normalHeader = cv.dequeue(Reusable.homeRecNormalHeader, kind: kind, for: ip)
+                normalHeader.iconView.kf.setImage(with: URL(string: header.cover ?? ""))
+                return normalHeader
+            }
         })
         
+        vmOutput = viewModel.transform(input: LXFRecommendViewModel.LXFRecommendInput())
         
+        vmOutput?.sections.drive(recommendCollectionView.rx.items(dataSource: dataSource)).disposed(by: rx.disposeBag)
         
-        let output = viewModel.transform(input: LXFRecommendViewModel.LXFRecommendInput())
-       
-        output.sections.drive(recommendCollectionView.rx.items(dataSource: dataSource)).disposed(by: rx.disposeBag)
+        refreshHeader = initRefreshHeader(recommendCollectionView) { [weak self] in
+            self?.vmOutput?.requestCommand.onNext(true)
+        }
+        let refreshFooter = initRefreshFooter(recommendCollectionView) { [weak self] in
+            self?.vmOutput?.requestCommand.onNext(false)
+        }
         
-        output.requestCommand.onNext(())
+        vmOutput?.autoSetRefreshHeaderStatus(header: refreshHeader, footer: refreshFooter).disposed(by: rx.disposeBag)
     }
 }
 
@@ -79,29 +138,35 @@ extension LXFRecommendController {
         recommendCollectionView.rx.setDelegate(self).disposed(by: rx.disposeBag)
         
         // 注册
+        // cell
         recommendCollectionView.register(Reusable.homeRecAdCell)
         recommendCollectionView.register(Reusable.homeRecNormalCell)
         recommendCollectionView.register(Reusable.homeRecRecommendCell)
         recommendCollectionView.register(Reusable.homeRecArticleCell)
         recommendCollectionView.register(Reusable.homeRecBangumiCell)
         recommendCollectionView.register(Reusable.homeRecLoginCell)
-        
-        recommendCollectionView.register(Reusable.homeLiveTopHeader, kind: SupplementaryViewKind.header)
+        // header
+        recommendCollectionView.register(Reusable.homeRecNormalHeader, kind: SupplementaryViewKind.header)
+        recommendCollectionView.register(Reusable.homeRecBannerHeader, kind: SupplementaryViewKind.header)
         
     }
 }
 
 extension LXFRecommendController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize.zero
+        guard let header = dataSource[section].header, let goto = header.goto else {
+            return CGSize.zero
+        }
+        let height = goto == "banner" ? LXFHomeRecBannerHeader.viewHeight() : LXFHomeRecNormalHeader.viewHeight()
+        return CGSize(width: kScreenW, height: height)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
-        return
-         CGSize.zero
+        return CGSize.zero
     }
 }
 
 private enum Reusable {
+    // cell
     static let homeRecAdCell = ReusableCell<LXFHomeRecAdCell>()
     static let homeRecNormalCell = ReusableCell<LXFHomeRecNormalCell>()
     static let homeRecRecommendCell = ReusableCell<LXFHomeRecRecommendCell>()
@@ -109,5 +174,7 @@ private enum Reusable {
     static let homeRecBangumiCell = ReusableCell<LXFHomeRecBangumiCell>()
     static let homeRecLoginCell = ReusableCell<LXFHomeRecLoginCell>(nibName: "LXFHomeRecLoginCell")
     
-    static let homeLiveTopHeader = ReusableView<LXFHomeLiveTopHeader>(identifier: "LXFHomeLiveTopHeader", nibName: "LXFHomeLiveTopHeader")
+    // header
+    static let homeRecNormalHeader = ReusableView<LXFHomeRecNormalHeader>(identifier: "LXFHomeRecNormalHeader", nibName: "LXFHomeRecNormalHeader")
+    static let homeRecBannerHeader = ReusableView<LXFHomeRecBannerHeader>()
 }

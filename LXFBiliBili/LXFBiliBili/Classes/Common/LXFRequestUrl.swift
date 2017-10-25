@@ -40,5 +40,6 @@ login_event：为1时会加载banner，为0时则不加载banner(细节有待考
 tip：建议只做小布局和大布局中的前2个。
 */
 
-let kUrlFeed = recommendUri + "x/feed/index?appkey=1d8b6e7d45233436&build=515000"
+// https://app.bilibili.com/x/feed/index?appkey=1d8b6e7d45233436&build=515000&idx=1508565029&login_event=0&mobi_app=android&network=wifi&open_event=&platform=android&pull=true&style=2&ts=1508565282&sign=7232bbbc81722ccbfd46f4dbe81963be
+let kUrlFeed = recommendUri + "x/feed/index?appkey=1d8b6e7d45233436&build=515000&mobi_app=android&network=wifi&open_event=&platform=android&style=2&ts=1508565282&sign=7232bbbc81722ccbfd46f4dbe81963be"
 

@@ -13,7 +13,7 @@ import TYCyclePagerView
 import Kingfisher
 
 class LXFBannerView: UIView {
-    var bannerArr = Variable<[LXFBannerModel]>([])
+    var bannerArr = Variable<[String]>([])
     
     // MARK: UI
     private let pagerView = TYCyclePagerView().then {
@@ -45,11 +45,6 @@ extension LXFBannerView {
             self.pagerView.reloadData()
             self.pageControl.numberOfPages = self.bannerArr.value.count
             }.disposed(by: rx.disposeBag)
-        // 注册通知
-        NotificationCenter.default.rx.notification(NSNotification.Name(rawValue: kLXFHomeLiveTopHeaderBannerNote)).subscribe(onNext: { (note) in
-            guard let bannerArr = note.object as? [LXFBannerModel] else { return }
-            self.bannerArr.value = bannerArr
-        }).disposed(by: rx.disposeBag)
     }
 }
 
@@ -90,7 +85,7 @@ extension LXFBannerView: TYCyclePagerViewDataSource, TYCyclePagerViewDelegate {
     }
     func pagerView(_ pagerView: TYCyclePagerView, cellForItemAt index: Int) -> UICollectionViewCell {
         let cell = pagerView.dequeueReusableCell(withReuseIdentifier: "LXFBannerCell", for: index) as! LXFBannerCell
-        cell.bannerImgView.kf.setImage(with: URL(string: bannerArr.value[index].img))
+        cell.bannerImgView.kf.setImage(with: URL(string: bannerArr.value[index]))
         return cell
     }
     func pagerView(_ pageView: TYCyclePagerView, didScrollFrom fromIndex: Int, to toIndex: Int) {

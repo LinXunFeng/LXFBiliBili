@@ -15,8 +15,6 @@ import TYCyclePagerView
 import Then
 import Kingfisher
 
-let kLXFHomeLiveTopHeaderBannerNote = "LXFHomeLiveTopHeaderBannerNote"
-
 fileprivate enum Reusable {
     static let categoryCell = ReusableCell<LXFLiveTopCategoryCell>(nibName: "LXFLiveTopCategoryCell")
 }
@@ -30,7 +28,7 @@ class LXFHomeLiveTopHeader: UICollectionReusableView {
     @IBOutlet weak var categoryView: UICollectionView!
     @IBOutlet private weak var headerView: UIView!
     
-    var bannerArr = Variable<[LXFBannerModel]>([])
+    var bannerArr = Variable<[String]>([])
     
     private var dataSource : RxCollectionViewSectionedReloadDataSource<LXFMenuSection>!
     

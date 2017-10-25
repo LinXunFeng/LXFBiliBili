@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LXFBaseNavigationController: UINavigationController {
+class LXFBaseNavigationController: UINavigationController, LXFNavBackable {
     
     private var popGesture: UIGestureRecognizer?
 

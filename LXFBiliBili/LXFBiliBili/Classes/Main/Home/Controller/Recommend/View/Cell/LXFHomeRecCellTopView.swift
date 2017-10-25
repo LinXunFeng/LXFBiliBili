@@ -11,8 +11,10 @@ import UIKit
 class LXFHomeRecCellTopView: UIView, LXFNibloadable {
 
     @IBOutlet weak var iconView: UIImageView!
+    @IBOutlet weak var playIconView: UIImageView!
     @IBOutlet weak var playCountLabel: UILabel!
     @IBOutlet weak var danmukuCountLabel: UILabel!
+    @IBOutlet weak var danmukuIconView: UIImageView!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var moreBtn: UIButton!
