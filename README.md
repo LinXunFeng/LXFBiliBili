@@ -23,7 +23,7 @@ RxSwift-高仿哔哩哔哩
 
 ### iOS
 
-[RxSwift + MJExtension 打造自动处理刷新控件状态](https://juejin.im/post/59ee1e215188255f5a473b89)
+[RxSwift + MJRefresh 打造自动处理刷新控件状态](https://juejin.im/post/59ee1e215188255f5a473b89)
 
 
 
